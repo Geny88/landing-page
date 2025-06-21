@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===============================
+   🧱 HEADER
+   =============================== */
+
+header, footer, .hero {
+    background-color: #1f2937;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ===============================
+   🧱 HERO
+   =============================== */
+
+.hero {
+    display: flex;
+    flex: 0 1 auto;
+    justify-content: center;
+    padding: 50px;
+    gap: 10px;
+}
+
+/* Hero left */
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+}
+
+.hero-h1 {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-text p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Hero right */
+.hero-img {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 450px;
+}
+
+/* ===============================
+   🧱 CONTENT
+   =============================== */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 40px;
+}
+
+/* 4 image container */
+.container-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.container-img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-img {
+    display: flex;
+    flex: 1 1 auto;
+    width: 150px;
+    /*max-width: 150px;*/
+    height: 150px;
+    border-color: #3882f6;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: hidden; /* cuts of the image corners inside the container */
+}
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+    /*border-radius: 7px;*/
+}
+
+.container-text {
+    max-width: 150px;
+}
+
+/* ===============================
+   🧱 QUOTE
+   =============================== */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.quote-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote p {
+    font-size: 36px;
+    max-width: 800px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#author {
+    font-size: 24px;
+    font-weight: 800;
+    font-style: normal;
+    align-self: flex-end;
+    margin-right: 50px;
+}
+
+/* ===============================
+   🧱 ACTION
+   =============================== */
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.container-action {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    gap: 20px;
+    color: #f9faf8;
+    max-width: 900px;
+}
+
+.action-left {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.action-right {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    /*padding: 10px;*/
+}
+
+.action-right button {
+    border: white solid 2px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/*
+button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    width: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+*/
+    
+
+/* ===============================
+   🧱 FOOTER
+   =============================== */
+
+footer {
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
